@@ -13,13 +13,13 @@ Accept:
 Accept-Encoding:
 > Display the compression algorithms that the client supported
 
+<!--more-->
 Accept-Language:
 > Display the language type that the client wants receive
 
 Cache-Control:
 > Display the caching strategy used by the client(max-age=0 indicates that the client does not cache)
 
-<!--more-->
 Connection:
 > Display the type of connection the client wants to open(long or short connection, long connection requires heartbeat to maintain)
 
